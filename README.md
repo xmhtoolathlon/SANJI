@@ -54,29 +54,15 @@ SANJI/
 - **Deadlock Issues**: Multi-process synchronization problems
 - **Data Loading**: Race conditions in parallel data loading
 
-### 🐛 Complete FIXME List
+### 📝 Complete FIXME List
 
-- [ ] **benchmarks/memory_test.py:67** - GPU memory not released after test
-- [ ] **benchmarks/speed_test.py:23** - Warmup iterations hardcoded
-- [x] **sanji/data/loader.py:67** - Race condition in prefetch queue
-- [x] **sanji/data/loader.py:89** - Buffer overflow with large datasets
-- [x] **sanji/data/sampler.py:23** - Incorrect shuffle seed propagation
-- [x] **sanji/distributed/coordinator.py:112** - Deadlock in barrier synchronization
-- [x] **sanji/distributed/coordinator.py:156** - Incorrect timeout handling
-- [x] **sanji/distributed/worker.py:45** - Memory leak in worker initialization
-- [x] **sanji/distributed/worker.py:89** - Race condition in task queue
-- [ ] **sanji/models/transformer.py:145** - Attention mask not applied correctly
-- [ ] **sanji/models/transformer.py:189** - Position encoding overflow for long sequences
-- [x] **sanji/optimizer/adam_custom.py:34** - Gradient overflow for large batches
-- [x] **sanji/optimizer/adam_custom.py:78** - Missing epsilon check
-- [x] **sanji/optimizer/sgd_custom.py:45** - Weight decay applied incorrectly
-- [ ] **sanji/utils/checkpoint.py:56** - File handle not closed properly
-- [ ] **sanji/utils/checkpoint.py:78** - Incomplete state dict saving
-- [ ] **sanji/utils/logging.py:34** - Logger handler leak
-- [x] **sanji/utils/metrics.py:112** - Division by zero in accuracy calculation
-- [x] **sanji/utils/metrics.py:145** - Incorrect F1 score computation
-- [x] **tests/test_distributed.py:89** - Flaky test due to timing issues
-- [x] **tests/test_optimizer.py:45** - Mock objects not cleaned up
+- [ ] **benchmarks/memory_test.py:22** - GPU memory not released after test
+- [ ] **benchmarks/speed_test.py:11** - Warmup iterations hardcoded
+- [ ] **sanji/models/transformer.py:19** - Attention mask not applied correctly
+- [ ] **sanji/models/transformer.py:32** - Position encoding overflow for long sequences
+- [ ] **sanji/utils/checkpoint.py:17** - File handle not closed properly
+- [ ] **sanji/utils/checkpoint.py:26** - Incomplete state dict saving
+- [ ] **sanji/utils/logging.py:14** - Logger handler leak
 
 ## 🤝 Contributing
 
